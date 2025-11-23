@@ -1,0 +1,153 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Professional Business Inventory Management Design System */
+
+@layer base {
+  :root {
+    /* Base colors */
+    --background: 0 0% 100%;
+    --foreground: 215 25% 15%;
+
+    /* Card colors */
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 15%;
+
+    /* Popover colors */
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 15%;
+
+    /* Primary - Professional Business Blue */
+    --primary: 213 94% 68%;
+    --primary-foreground: 0 0% 100%;
+    --primary-muted: 213 94% 85%;
+
+    /* Secondary - Light Professional */
+    --secondary: 214 32% 96%;
+    --secondary-foreground: 215 25% 15%;
+
+    /* Muted colors */
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+
+    /* Accent - Business Green */
+    --accent: 142 76% 36%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Status colors */
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Low stock alert */
+    --low-stock: 38 92% 50%;
+    --low-stock-foreground: 0 0% 100%;
+    --out-of-stock: 0 84% 60%;
+    --out-of-stock-foreground: 0 0% 100%;
+
+    /* Border and input */
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 213 94% 68%;
+
+    --radius: 0.5rem;
+
+    /* Sidebar colors for white-black website */
+    --sidebar-background: 0 0% 100%;           /* white background */
+    --sidebar-foreground: 0 0% 0%;             /* black text */
+    --sidebar-primary: 0 0% 0%;                /* primary text black */
+    --sidebar-primary-foreground: 0 0% 100%;   /* white if needed on primary */
+    --sidebar-accent: 210 15% 90%;             /* light gray hover background */
+    --sidebar-accent-foreground: 0 0% 0%;      /* black text on hover */
+    --sidebar-border: 210 15% 80%;             /* light gray border */
+    --sidebar-ring: 210 15% 50%;               /* for focus outlines */
+  }
+
+  .dark {
+    /* Base colors - Dark mode */
+    --background: 215 28% 9%;
+    --foreground: 213 31% 91%;
+
+    /* Card colors */
+    --card: 215 28% 12%;
+    --card-foreground: 213 31% 91%;
+
+    /* Popover colors */
+    --popover: 215 28% 12%;
+    --popover-foreground: 213 31% 91%;
+
+    /* Primary - Bright business blue for dark mode */
+    --primary: 213 94% 68%;
+    --primary-foreground: 215 28% 9%;
+    --primary-muted: 213 80% 25%;
+
+    /* Secondary */
+    --secondary: 215 28% 15%;
+    --secondary-foreground: 213 31% 91%;
+
+    /* Muted colors */
+    --muted: 215 28% 15%;
+    --muted-foreground: 217 10% 65%;
+
+    /* Accent - Business green for dark mode */
+    --accent: 142 76% 45%;
+    --accent-foreground: 215 28% 9%;
+
+    /* Status colors */
+    --success: 142 76% 45%;
+    --success-foreground: 215 28% 9%;
+    --warning: 38 92% 60%;
+    --warning-foreground: 215 28% 9%;
+    --destructive: 0 84% 70%;
+    --destructive-foreground: 215 28% 9%;
+
+    /* Low stock alert */
+    --low-stock: 38 92% 60%;
+    --low-stock-foreground: 215 28% 9%;
+    --out-of-stock: 0 84% 70%;
+    --out-of-stock-foreground: 215 28% 9%;
+
+    /* Border and input */
+    --border: 215 28% 20%;
+    --input: 215 28% 20%;
+    --ring: 213 94% 68%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+a[href*="lovable.dev"], iframe[src*="lovable.dev"], div[style*="Edit with Lovable"], .lovable-badge {
+
+display: none !important;
+
+opacity: 0 !important;
+
+visibility: hidden !important;
+
+pointer-events: none !important;
+
+position: absolute !important;
+
+z-index: -9999 !important;
+
+}
